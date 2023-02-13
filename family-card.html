@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8"/>
+
+  <title>Memorial book</title>
+
+  <!-- seo -->
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+
+  <!-- document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+
+  <!-- additional approach to add favicon -->
+  <link rel="apple-touch-icon" href="img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="16x16" href="#">
+  <link rel="apple-touch-icon" sizes="32x32" href="#">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+
+  <!-- for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- additional styles -->
+  <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+  <link href="css/fancybox.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div id="page">
+  <header class="header">
+    <!--logo header-->
+    <a href="#" class="logo-header">
+      <img src="img/logo.svg" class="logo-header__img" alt="" title=""/>
+    </a>
+
+    <!--menu-->
+    <nav class="header-menu" id="header-menu">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Люди</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Места</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Семейное древо</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Магазин</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--buttons-->
+    <div class="header-buttons" id="header-button">
+      <button type="button" class="header-buttons__lang">Ru</button>
+
+      <button type="button" class="notifications">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path d="m17.6 14.5-.2-.3c-1-1.2-1.7-2-1.7-5.5 0-3.2-1.3-5.3-4-6.4C11.4.9 10.3 0 9 0 7.7 0 6.6.9 6.2 2.3 3.6 3.4 2.3 5.5 2.3 8.7c0 3.5-.6 4.3-1.7 5.5l-.2.3c-.4.5-.5 1.2-.2 1.8.3.6.9 1 1.6 1h3.5c0 1 .4 1.9 1.1 2.6C7.1 20.6 8 21 9 21s1.9-.4 2.7-1.1c.7-.7 1.1-1.7 1.1-2.6h3.5c.7 0 1.3-.4 1.6-1 .2-.6.2-1.3-.3-1.8zm-7 4.3c-.8.9-2.3.9-3.2 0-.4-.4-.7-1-.7-1.6h4.5c.1.6-.2 1.2-.6 1.6zm5.7-3H1.8c-.2 0-.2-.1-.3-.1v-.2l.2-.3c1.1-1.4 2-2.4 2-6.5 0-3.3 1.6-4.4 3-5 .4-.2.8-.5.9-1 .2-.6.7-1.2 1.4-1.2s1.2.6 1.3 1.2c.1.4.5.8.9 1 1.4.6 3 1.7 3 5 0 4.1.9 5.1 2 6.5l.2.3v.2c.1 0 0 .1-.1.1z"/>
+        </svg>
+        <span class="notifications__number">1</span>
+      </button>
+
+      <a href="#" class="login">Алексей В.Н.</a>
+
+      <button type="button" class="header-buttons__menu" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="family-card">
+      <div class="family-card-banner">
+        <img src="img/family/banner.png" class="bg-img" alt="" title=""/>
+      </div>
+      <ul class="family-card-nav">
+        <li class="family-card-nav__item active">
+          <div class="family-card-img">
+            <img src="img/family/img-1.png" class="bg-img" alt="" title=""/>
+          </div>
+          <span class="family-card__name">Робин Уильямс</span>
+          <time class="family-card__live">12.09.1973 - 30.11.2013</time>
+          <p class="family-card__death">Причина смерти: <span>Старость</span></p>
+        </li>
+        <li class="family-card-nav__item">
+          <div class="family-card-img">
+            <img src="img/family/img-1.png" class="bg-img" alt="" title=""/>
+          </div>
+          <span class="family-card__name">Энн Хеч</span>
+          <time class="family-card__live">12.09.1973 - 30.11.2013</time>
+          <p class="family-card__death">Причина смерти: <span>Старость</span></p>
+        </li>
+        <li class="family-card-nav__item">
+          <div class="family-card-img">
+            <img src="img/family/img-1.png" class="bg-img" alt="" title=""/>
+          </div>
+          <span class="family-card__name">Хэл Холбрук</span>
+          <time class="family-card__live">12.09.1973 - 30.11.2013</time>
+          <p class="family-card__death">Причина смерти: <span>Старость</span></p>
+        </li>
+        <li class="family-card-nav__item" title="Добавить">
+          <svg viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40.9167 23.9115H23.4167V41.4115H17.5833V23.9115H0.0833435V18.0781H17.5833V0.578125H23.4167V18.0781H40.9167V23.9115Z" fill="#BEC5CC"/>
+          </svg>
+        </li>
+      </ul>
+
+      <div class="family-info">
+        <div class="member-info">
+          <div class="member-info-wrap">
+            <div class="member-avatar">
+              <div class="member-avatar__wrap">
+                <img src="img/gallery/gallery-small-1.jpg" class="bg-img" alt="" title=""/>
+              </div>
+            </div>
+            <div class="member-name-wrap">
+              <span class="member-name">Робин Уильямс</span>
+              <span class="member-ages">24.12.1989 - 24.12.2001</span>
+            </div>
+          </div>
+          <div class="member-info-biography">
+            <p class="member-info__death">Причина смерти: <span class="reason">Рак</span></p>
+            <p>Руководитель государственного музея современного искусства</p>
+            <ul class="interests">
+              <li class="interests__item">Спортивная ходьба</li>
+              <li class="interests__item">Рыбалка</li>
+            </ul>
+            <ul class="social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img src="img/social/facebook.svg" alt="" title="facebook"/>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img src="img/social/instagram.svg" alt="" title=""/>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img src="img/social/twitter.svg" alt="" title=""/>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="relatives">
+            <h3 class="relatives__title">Родственники</h3>
+            <ul class="relatives-list">
+              <li class="relatives-list__item">
+                <a href="#" class="relatives__link">
+                  <div class="relatives__avatar">
+                    <img src="img/relatives/avatar-1.jpg" class="bg-img" alt="" title=""/>
+                  </div>
+                  <span class="relatives__name">Алексей В.Н.</span>
+                </a>
+              </li>
+              <li class="relatives-list__item">
+                <a href="#" class="relatives__link">
+                  <div class="relatives__avatar">
+                    <img src="img/relatives/avatar-1.jpg" class="bg-img" alt="" title=""/>
+                  </div>
+                  <span class="relatives__name">Алексей В.Н.</span>
+                </a>
+              </li>
+              <li class="relatives-list__item">
+                <a href="#" class="relatives__link">
+                  <div class="relatives__avatar">
+                    <img src="img/relatives/avatar-1.jpg" class="bg-img" alt="" title=""/>
+                  </div>
+                  <span class="relatives__name">Алексей В.Н.</span>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="view-relatives">
+              <div class="view-relatives__icon">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.8 19.3v5c0 .5-.3.8-.8.8-.4 0-.7-.3-.7-.8v-5c-1.5 1-3 1.4-4.7 1.1-1.2-.2-2.2-.9-2.9-1.7-1.4-1.6-2-4.3 0-6.7C.2 10.7-.3 9.2.5 7.3 1.2 5.7 2.6 5 4.4 4.9c0-.4 0-.7.1-.9.7-2.4 3.1-4.1 5.8-4 2.6.1 4.8 1.9 5.3 4.4.1.3.2.4.6.5 1.8.1 3 1 3.6 2.6.6 1.6.1 3-1.2 4.2l-.1.1v.1c.9 1.1 1.4 2.4 1.2 3.9-.1 1.2-.7 2.3-1.6 3.1-1.9 1.8-4.4 2-7.3.4zm0-8.6.2.1c.3-.3.5-.6.8-.9.4-.4.9-.5 1.2-.2.3.3.3.8-.1 1.2-.6.6-1.2 1.1-1.8 1.7-.2.2-.3.4-.3.6v2.9c0 .6.1 1 .6 1.4 1.6 1.6 4.1 1.7 5.7.1 1.6-1.5 1.5-4-.2-5.4-.7-.6-.6-1.1.2-1.5 1.2-.6 1.7-1.8 1.3-2.9-.4-1.2-1.6-1.8-2.9-1.6-1 .2-1.2 0-1.3-1-.1-2-1.6-3.6-3.6-3.9-2-.1-3.9 1.1-4.6 2.9-.1.4-.1.9-.2 1.4 0 .6-.4.9-1.1.8h-.3c-.6-.1-1.2 0-1.7.4-.5.2-.9.7-1 1.2-.4 1.2.2 2.3 1.4 2.9.7.4.8.9.2 1.4l-.1.1c-.5.4-.8.9-1 1.5s-.4 1.1-.3 1.7c.1.6.3 1.2.6 1.7s.8.9 1.4 1.2c1.6.8 3.4.5 4.7-.7.4-.5.7-.8.7-1.5 0-.4-.1-.8-.5-1.1-.8-.8-1.7-1.5-2.4-2.4-.1-.1-.2-.2-.2-.4V12c0-.2.3-.5.6-.5s.6.1.8.3c.6.5 1.1 1 1.8 1.7V6.1c0-.6.3-.9.8-.9s.8.3.8.9V10l-.2.7z"/>
+                </svg>
+              </div>
+              <span class="view-relatives__text">Смотреть семейное древо</span>
+            </a>
+          </div>
+        </div>
+        <div class="member-images-wrap">
+          <ul class="member-images">
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-1.jpg" class="gallery" rel="gallery">
+                <img src="img/gallery/gallery-small-1.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-2.jpg" class="gallery">
+                <img src="img/gallery/gallery-small-2.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-3.jpg" class="gallery">
+                <img src="img/gallery/gallery-small-3.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/test-video.mp4" class="gallery">
+                <video src="img/gallery/test-video.mp4" class="bg-img"></video>
+                <svg class="video-play" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33 19.5 0 39V0l33 19.5z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-1.jpg" class="gallery">
+                <img src="img/gallery/gallery-small-1.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-2.jpg" class="gallery">
+                <img src="img/gallery/gallery-small-2.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-3.jpg" class="gallery">
+                <img src="img/gallery/gallery-small-3.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/test-video.mp4" class="gallery">
+                <video src="img/gallery/test-video.mp4" class="bg-img"></video>
+                <svg class="video-play" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33 19.5 0 39V0l33 19.5z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-1.jpg" class="gallery">
+                <img src="img/gallery/gallery-small-1.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-2.jpg" class="gallery">
+                <img src="img/gallery/gallery-small-2.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/gallery-small-3.jpg" class="gallery">
+                <img src="img/gallery/gallery-small-3.jpg" class="bg-img" alt="" title=""/>
+              </a>
+            </li>
+            <li class="member-images__item">
+              <a href="img/gallery/test-video.mp4" class="gallery">
+                <video src="img/gallery/test-video.mp4" class="bg-img"></video>
+                <svg class="video-play" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33 19.5 0 39V0l33 19.5z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <!--logo footer-->
+    <a href="#" class="logo-footer">
+      <img src="img/logo-light.svg" class="logo-footer__img" alt="" title=""/>
+    </a>
+
+    <!--menu-->
+    <nav class="footer-menu">
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">О проекте</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Семейное древо</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Магазин</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Поиск людей</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Кладбища</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--cookie link-->
+    <a href="#" class="cookie-link">Политика обработки персональных данных</a>
+  </footer>
+</div>
+
+<div class="preview-modal" id="modal-from">
+  <div class="aside-form" id="form-aside">
+    <button type="button" class="close-registration" id="close-aside"></button>
+  </div>
+</div>
+
+<script src="js/fancybox.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
