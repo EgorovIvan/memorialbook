@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8"/>
+
+  <title>Memorial book</title>
+
+  <!-- seo -->
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+
+  <!-- document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+
+  <!-- additional approach to add favicon -->
+  <link rel="apple-touch-icon" href="img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="16x16" href="#">
+  <link rel="apple-touch-icon" sizes="32x32" href="#">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+
+  <!-- for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- additional styles -->
+  <link href="css/fancybox.css" rel="stylesheet" type="text/css"/>
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div id="page">
+  <header class="header">
+    <!--logo header-->
+    <a href="#" class="logo-header">
+      <img src="img/logo.svg" class="logo-header__img" alt="" title=""/>
+    </a>
+
+    <!--menu-->
+    <nav class="header-menu" id="header-menu">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Люди</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Места</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Семейное древо</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Магазин</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--buttons-->
+    <div class="header-buttons" id="header-button">
+      <button type="button" class="header-buttons__lang">Ru</button>
+
+      <button type="button" class="notifications">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path d="m17.6 14.5-.2-.3c-1-1.2-1.7-2-1.7-5.5 0-3.2-1.3-5.3-4-6.4C11.4.9 10.3 0 9 0 7.7 0 6.6.9 6.2 2.3 3.6 3.4 2.3 5.5 2.3 8.7c0 3.5-.6 4.3-1.7 5.5l-.2.3c-.4.5-.5 1.2-.2 1.8.3.6.9 1 1.6 1h3.5c0 1 .4 1.9 1.1 2.6C7.1 20.6 8 21 9 21s1.9-.4 2.7-1.1c.7-.7 1.1-1.7 1.1-2.6h3.5c.7 0 1.3-.4 1.6-1 .2-.6.2-1.3-.3-1.8zm-7 4.3c-.8.9-2.3.9-3.2 0-.4-.4-.7-1-.7-1.6h4.5c.1.6-.2 1.2-.6 1.6zm5.7-3H1.8c-.2 0-.2-.1-.3-.1v-.2l.2-.3c1.1-1.4 2-2.4 2-6.5 0-3.3 1.6-4.4 3-5 .4-.2.8-.5.9-1 .2-.6.7-1.2 1.4-1.2s1.2.6 1.3 1.2c.1.4.5.8.9 1 1.4.6 3 1.7 3 5 0 4.1.9 5.1 2 6.5l.2.3v.2c.1 0 0 .1-.1.1z"/>
+        </svg>
+        <span class="notifications__number">1</span>
+      </button>
+
+      <a href="#" class="login">Алексей В.Н.</a>
+
+      <button type="button" class="header-buttons__menu" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="qr-page">
+      <div class="qr-code__banner">
+        <img src="img/gallery/personal-banner.jpg" class="bg-img" alt="" title=""/>
+        <span class="qr-code__mark">Family burial</span>
+      </div>
+
+      <div class="qr-code-slider swiper">
+        <button type="button" class="qr-code-slider__prev">
+          <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.29007 9.88L5.17007 6L1.29007 2.12C1.19749 2.02742 1.12405 1.91751 1.07394 1.79654C1.02384 1.67558 0.998047 1.54593 0.998047 1.415C0.998047 1.28407 1.02384 1.15442 1.07394 1.03346C1.12405 0.912494 1.19749 0.802583 1.29007 0.710001C1.38265 0.617419 1.49256 0.543979 1.61352 0.493874C1.73449 0.443769 1.86414 0.41798 1.99507 0.41798C2.126 0.41798 2.25565 0.443769 2.37661 0.493874C2.49757 0.543979 2.60749 0.617419 2.70007 0.710001L7.29007 5.3C7.68007 5.69 7.68007 6.32 7.29007 6.71L2.70007 11.3C2.60755 11.3927 2.49767 11.4663 2.37669 11.5164C2.25572 11.5666 2.12604 11.5924 1.99507 11.5924C1.8641 11.5924 1.73442 11.5666 1.61344 11.5164C1.49247 11.4663 1.38258 11.3927 1.29007 11.3C0.910068 10.91 0.900068 10.27 1.29007 9.88Z" fill="#175ED9"/>
+          </svg>
+        </button>
+
+
+
+        <ul class="qr-code-slider__list swiper-wrapper">
+          <li class="qr-code-slider__item swiper-slide">
+            <div class="qr-code-slider__avatar">
+              <img src="img/gallery/avatar.jpg" class="bg-img" alt="" title=""/>
+            </div>
+            <span class="qr-code-slider__name">Lido Anthony Iacocca</span>
+          </li>
+          <li class="qr-code-slider__item swiper-slide">
+            <div class="qr-code-slider__avatar">
+              <img src="img/gallery/avatar.jpg" class="bg-img" alt="" title=""/>
+            </div>
+            <span class="qr-code-slider__name">Lido Anthony Iacocca</span>
+          </li>
+          <li class="qr-code-slider__item swiper-slide">
+            <div class="qr-code-slider__avatar">
+              <img src="img/gallery/avatar.jpg" class="bg-img" alt="" title=""/>
+            </div>
+            <span class="qr-code-slider__name">Lido Anthony Iacocca</span>
+          </li>
+        </ul>
+
+        <button type="button" class="qr-code-slider__next">
+          <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.29007 9.88L5.17007 6L1.29007 2.12C1.19749 2.02742 1.12405 1.91751 1.07394 1.79654C1.02384 1.67558 0.998047 1.54593 0.998047 1.415C0.998047 1.28407 1.02384 1.15442 1.07394 1.03346C1.12405 0.912494 1.19749 0.802583 1.29007 0.710001C1.38265 0.617419 1.49256 0.543979 1.61352 0.493874C1.73449 0.443769 1.86414 0.41798 1.99507 0.41798C2.126 0.41798 2.25565 0.443769 2.37661 0.493874C2.49757 0.543979 2.60749 0.617419 2.70007 0.710001L7.29007 5.3C7.68007 5.69 7.68007 6.32 7.29007 6.71L2.70007 11.3C2.60755 11.3927 2.49767 11.4663 2.37669 11.5164C2.25572 11.5666 2.12604 11.5924 1.99507 11.5924C1.8641 11.5924 1.73442 11.5666 1.61344 11.5164C1.49247 11.4663 1.38258 11.3927 1.29007 11.3C0.910068 10.91 0.900068 10.27 1.29007 9.88Z" fill="#175ED9"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="qr-profile__info">
+        <p class="qr-profile__info-text">Head of the State Museum contemporary art.</p>
+        <span class="qr-profile__info-item">11.01.1973 - 20.02.2011</span>
+        <span class="qr-profile__info-item">Cause of death: Cancer</span>
+      </div>
+
+      <a href="#" class="full-profile-link blue-btn">View full profile</a>
+
+      <div class="member-images-wrap">
+        <div class="member-images__style">
+          <button type="button" class="btn-style-grid">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 0H0V20H20V0ZM6 18H2V14H6V18ZM6 12H2V8H6V12ZM6 6H2V2H6V6ZM12 18H8V14H12V18ZM12 12H8V8H12V12ZM12 6H8V2H12V6ZM18 18H14V14H18V18ZM18 12H14V8H18V12ZM18 6H14V2H18V6Z" fill="#333333"/>
+            </svg>
+          </button>
+          <button type="button" class="btn-style-inline">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 14V0L11.5 7L0.5 14ZM2.5 10.35L7.75 7L2.5 3.65V10.35Z" fill="#333333"/>
+            </svg>
+          </button>
+        </div>
+        <ul class="member-images">
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-1.jpg" class="gallery" rel="gallery">
+              <img src="img/gallery/gallery-small-1.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-2.jpg" class="gallery">
+              <img src="img/gallery/gallery-small-2.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-3.jpg" class="gallery">
+              <img src="img/gallery/gallery-small-3.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/test-video.mp4" class="gallery">
+              <video src="img/gallery/test-video.mp4" class="bg-img"></video>
+              <svg class="video-play" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 19.5 0 39V0l33 19.5z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-1.jpg" class="gallery">
+              <img src="img/gallery/gallery-small-1.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-2.jpg" class="gallery">
+              <img src="img/gallery/gallery-small-2.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-3.jpg" class="gallery">
+              <img src="img/gallery/gallery-small-3.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/test-video.mp4" class="gallery">
+              <video src="img/gallery/test-video.mp4" class="bg-img"></video>
+              <svg class="video-play" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 19.5 0 39V0l33 19.5z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-1.jpg" class="gallery">
+              <img src="img/gallery/gallery-small-1.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-2.jpg" class="gallery">
+              <img src="img/gallery/gallery-small-2.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/gallery-small-3.jpg" class="gallery">
+              <img src="img/gallery/gallery-small-3.jpg" class="bg-img" alt="" title=""/>
+            </a>
+          </li>
+          <li class="member-images__item">
+            <a href="img/gallery/test-video.mp4" class="gallery">
+              <video src="img/gallery/test-video.mp4" class="bg-img"></video>
+              <svg class="video-play" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 19.5 0 39V0l33 19.5z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<div class="preview-modal" id="modal-from">
+  <div class="aside-form" id="form-aside">
+    <button type="button" class="close-registration" id="close-aside"></button>
+  </div>
+</div>
+
+<script src="js/swiper.min.js"></script>
+<script src="js/fancybox.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
