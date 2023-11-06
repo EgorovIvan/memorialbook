@@ -106,7 +106,7 @@ section {
 .content {
   width: 100%;
   min-height: calc(100vh - 116px);
-  display: block;
+  display: flex;
   padding-top: 97px;
 }
 
