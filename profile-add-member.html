@@ -102,12 +102,12 @@
             <div>
               <h3 class="add-profile-content__title">Новый профиль</h3>
               <ul class="steeps-nav">
-                <li class="steeps-nav__item active current">
+                <li class="steeps-nav__item">
                   <i class="steeps-nav__icon"></i>
                   <span class="steeps-nav__title">Шаг 1</span>
                   <p class="steeps-nav__desc">Основная информация</p>
                 </li>
-                <li class="steeps-nav__item">
+                <li class="steeps-nav__item active current">
                   <i class="steeps-nav__icon"></i>
                   <span class="steeps-nav__title">Шаг 2</span>
                   <p class="steeps-nav__desc">Описание</p>
@@ -120,7 +120,7 @@
               </ul>
             </div>
             <form class="add-profile-wrap" id="add-profile" action="">
-              <div class="steep">
+              <div class="steep hide">
                 <div class="steep-wrap grid-col-2">
                   <div class="user-avatar">
                     <div class="preview-avatar">
@@ -336,10 +336,85 @@
                   </div>
                 </div>
               </div>
-              <div class="steep hide">
+              <div class="steep">
                 <div class="steep-wrap">
                   <div class="input-wrap">
                     <span class="input-wrap__title">Фотографии и видео:</span>
+                    <div class="input-photo">
+                      <div class="input-photo-preview">
+                        <button type="button" class="delete-resource">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.41421 0.585779C2.63316 -0.19527 1.36684 -0.19527 0.585786 0.585779C-0.195262 1.36683 -0.195262 2.63316 0.585786 3.41421L7.17157 9.99999L0.585787 16.5858C-0.195262 17.3668 -0.195262 18.6332 0.585787 19.4142C1.36684 20.1953 2.63316 20.1953 3.41421 19.4142L10 12.8284L16.5858 19.4142C17.3668 20.1953 18.6332 20.1953 19.4142 19.4142C20.1953 18.6332 20.1953 17.3668 19.4142 16.5858L12.8284 9.99999L19.4142 3.41421C20.1953 2.63316 20.1953 1.36683 19.4142 0.585779C18.6332 -0.19527 17.3668 -0.19527 16.5858 0.585779L10 7.17157L3.41421 0.585779Z"
+                              fill="white"
+                            />
+                          </svg></button
+                        ><input
+                          type="file"
+                          hidden="hidden"
+                          name="load-resource"
+                        /><img
+                          class="bg-img"
+                          src="/img/community/avatar-5.png"
+                        />
+                      </div>
+                      <div class="input-photo-preview">
+                        <button type="button" class="delete-resource">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.41421 0.585779C2.63316 -0.19527 1.36684 -0.19527 0.585786 0.585779C-0.195262 1.36683 -0.195262 2.63316 0.585786 3.41421L7.17157 9.99999L0.585787 16.5858C-0.195262 17.3668 -0.195262 18.6332 0.585787 19.4142C1.36684 20.1953 2.63316 20.1953 3.41421 19.4142L10 12.8284L16.5858 19.4142C17.3668 20.1953 18.6332 20.1953 19.4142 19.4142C20.1953 18.6332 20.1953 17.3668 19.4142 16.5858L12.8284 9.99999L19.4142 3.41421C20.1953 2.63316 20.1953 1.36683 19.4142 0.585779C18.6332 -0.19527 17.3668 -0.19527 16.5858 0.585779L10 7.17157L3.41421 0.585779Z"
+                              fill="white"
+                            />
+                          </svg></button
+                        ><input
+                          type="file"
+                          hidden="hidden"
+                          name="load-resource"
+                        /><img class="bg-img" src="/img/community/img-3.png" />
+                      </div>
+                      <div class="input-photo-preview">
+                        <button type="button" class="delete-resource">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.41421 0.585779C2.63316 -0.19527 1.36684 -0.19527 0.585786 0.585779C-0.195262 1.36683 -0.195262 2.63316 0.585786 3.41421L7.17157 9.99999L0.585787 16.5858C-0.195262 17.3668 -0.195262 18.6332 0.585787 19.4142C1.36684 20.1953 2.63316 20.1953 3.41421 19.4142L10 12.8284L16.5858 19.4142C17.3668 20.1953 18.6332 20.1953 19.4142 19.4142C20.1953 18.6332 20.1953 17.3668 19.4142 16.5858L12.8284 9.99999L19.4142 3.41421C20.1953 2.63316 20.1953 1.36683 19.4142 0.585779C18.6332 -0.19527 17.3668 -0.19527 16.5858 0.585779L10 7.17157L3.41421 0.585779Z"
+                              fill="white"
+                            />
+                          </svg></button
+                        ><input
+                          type="file"
+                          hidden="hidden"
+                          name="load-resource"
+                        /><img class="bg-img" src="/img/community/img-4.png" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="input-wrap">
+                    <span class="input-wrap__title">Добавить фото/видео</span>
                     <div class="input-photo">
                       <label class="input-photo-load">
                         <svg
