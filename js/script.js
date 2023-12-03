@@ -936,4 +936,22 @@
       });
     }
   });
+
+  function toggleText() {
+    var fullText = document.getElementById("member-info__desc");
+    var buttonText = document.getElementById("toggleButton");
+
+    if (fullText.classList.contains("member-info__desc--hide")) {
+      fullText.classList.remove("member-info__desc--hide");
+      buttonText.textContent = "Скрыть";
+      buttonText.classList.add("on");
+    } else {
+      fullText.classList.add("member-info__desc--hide");
+      buttonText.textContent = "Показать";
+      buttonText.classList.remove("on");
+    }
+  }
+  document
+    .querySelector(".member-info__more")
+    .addEventListener("click", toggleText);
 })();
