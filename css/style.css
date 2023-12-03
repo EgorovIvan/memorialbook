@@ -1317,7 +1317,8 @@ a.cemetery-contacts-list__text:hover {
 
 .member-info {
   width: 100%;
-  padding-top: 27px;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 .member-avatar,
@@ -1428,7 +1429,7 @@ a.cemetery-contacts-list__text:hover {
   color: var(--dark-gray);
   padding: 5px 15px;
   margin: 12px 6px 0 0;
-  font: 600 14px sans-serif;
+  font: 600 14px "Lato", sans-serif;
 }
 
 .relatives {
@@ -1438,7 +1439,7 @@ a.cemetery-contacts-list__text:hover {
 .relatives__title {
   color: var(--dark-gray);
   line-height: 1.1;
-  font: 900 20px sans-serif;
+  font: 900 20px "Lato", sans-serif;
 }
 
 .relatives-list {
@@ -4098,7 +4099,6 @@ a.cemetery-contacts-list__text:hover {
   }
 
   .list,
-  .member-card,
   .header,
   .pet-card-wrap {
     padding: 0 20px;
@@ -4111,10 +4111,6 @@ a.cemetery-contacts-list__text:hover {
   .member-card,
   .pet-card-wrap {
     grid-template-columns: 1fr 560px;
-  }
-
-  .member-info {
-    padding-right: 20px;
   }
 
   .cemetery-content {
@@ -4608,7 +4604,34 @@ a.cemetery-contacts-list__text:hover {
   }
 
   .member-info {
-    padding-right: 0;
+    padding: 20px;
+  }
+
+  .interests__item {
+    background-color: #e8effc;
+    color: #201e1f;
+  }
+
+  .relatives {
+    margin: 30px -20px 0;
+  }
+
+  .relatives__title {
+    padding: 0 20px;
+  }
+
+  .relatives-list {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+    scrollbar-width: none;
+  }
+  .relatives-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .view-relatives {
+    margin: 10px 20px 0;
   }
 
   .cemetery-text-wrap {
@@ -4770,7 +4793,13 @@ a.cemetery-contacts-list__text:hover {
   }
 
   .member-name {
-    font-size: 21px;
+    font: 900 22px "Lato", sans-serif;
+  }
+
+  .member-ages {
+    font: 400 14px/22px "Lato", sans-serif;
+    color: var(--black);
+    opacity: 0.8;
   }
 
   .cemetery-named-wrap {
@@ -5010,17 +5039,18 @@ a.cemetery-contacts-list__text:hover {
   }
 
   .member-info-wrap {
-    flex-direction: column;
     align-items: center;
   }
 
-  .member-name-wrap {
-    padding: 0;
-    margin-top: 20px;
+  .member-avatar,
+  .member-avatar__wrap {
+    width: 90px;
+    height: 90px;
   }
 
-  .member-name {
-    text-align: center;
+  .member-avatar__change-link {
+    top: -4px;
+    right: -5px;
   }
 
   .price-list {
